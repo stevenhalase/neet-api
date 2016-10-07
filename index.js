@@ -9,8 +9,6 @@ const request = require('request');
 const path = require('path');
 const port = process.env.PORT || 3080;
 
-const User = require('./user-model');
-
 const uristring =
     process.env.MONGODB_URI ||
     'mongodb://localhost/neet';
