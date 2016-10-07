@@ -28,6 +28,12 @@ app.use(bodyParser.json());
 ///// Parsing urlencoded
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.all('/api/activities', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 app.get('/api/activities', function(req, res) {
   console.log('running', Activity)
   Activity.find({}, function(error, activities) {
