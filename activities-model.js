@@ -19,7 +19,8 @@ const activitiesSchema = mongoose.Schema({
         lng: {type: String}
       }
     },
-    date: { type: String }
+    date: { type: String },
+    time: { type: String }
 });
 
 const Activity = mongoose.model('activities', activitiesSchema);

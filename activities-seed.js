@@ -77,6 +77,46 @@ function seedActivities () {
       },
       date: '10/14/2016',
       time: '1:45PM'
+  },{
+      user: {
+        name: 'Jane',
+        email: 'jane@gmail.com',
+        address: '18923 River Ct Milwaukee, WI 53215',
+        location: {
+          lat: 42.695216,
+          lng: -87.838066
+        }
+      },
+      description: 'Fun Party',
+      place: {
+        name: 'Community Center',
+        location: {
+          lat: 42.695216,
+          lng: -87.838066
+        }
+      },
+      date: '10/25/2016',
+      time: '2:00PM'
+  },{
+      user: {
+        name: 'Jerry',
+        email: 'jerry@gmail.com',
+        address: '8934 Lincoln Ave Milwaukee, WI 53215',
+        location: {
+          lat: 42.697803,
+          lng: -87.835061
+        }
+      },
+      description: 'Get together',
+      place: {
+        name: "Cozie's Pub",
+        location: {
+          lat: 42.697803,
+          lng: -87.835061
+        }
+      },
+      date: '10/16/2016',
+      time: '6:30PM'
   }]
 
   for (var i = 0; i < activities.length; i++) {
