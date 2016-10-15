@@ -1,6 +1,7 @@
 'use strict'
 const Activity = require('./activities-model');
 const mongoose = require('mongoose');
+const fs = require('fs');
 
 const uristring =
     process.env.MONGODB_URI ||
@@ -21,6 +22,7 @@ function seedActivities () {
       user: {
         name: 'Steve',
         email: 'sally11b@gmail.com',
+        image: '../../assets/images/user1.jpeg',
         address: '2354 Main St Milwaukee, WI 53215',
         location: {
           lat: 43.004482,
@@ -42,6 +44,7 @@ function seedActivities () {
         name: 'Joe',
         email: 'joey@gmail.com',
         address: '8927 Rogers St Milwaukee, WI 53215',
+        image: '../../assets/images/user2.jpeg',
         location: {
           lat: 43.004156,
           lng: -87.936192
@@ -62,6 +65,7 @@ function seedActivities () {
         name: 'Mike',
         email: 'mike@gmail.com',
         address: '9837 Racine Ct Milwaukee, WI 53215',
+        image: '../../assets/images/user1.jpg',
         location: {
           lat: 43.000342,
           lng: -87.937752
@@ -82,6 +86,7 @@ function seedActivities () {
         name: 'Jane',
         email: 'jane@gmail.com',
         address: '18923 River Ct Milwaukee, WI 53215',
+        image: '../../assets/images/user2.jpg',
         location: {
           lat: 42.695216,
           lng: -87.838066
@@ -102,6 +107,7 @@ function seedActivities () {
         name: 'Jerry',
         email: 'jerry@gmail.com',
         address: '8934 Lincoln Ave Milwaukee, WI 53215',
+        image: '../../assets/images/user1.jpeg',
         location: {
           lat: 42.697803,
           lng: -87.835061

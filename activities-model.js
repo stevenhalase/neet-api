@@ -6,12 +6,13 @@ const activitiesSchema = mongoose.Schema({
       name: {type: String},
       email: {type: String},
       address: {type: String},
+      image: {type: String},
       location: {
         lat: {type: String},
         lng: {type: String}
       }
     },
-    description: { type: String },
+    description: {type: String},
     place: {
       name: {type: String},
       location: {
@@ -19,8 +20,8 @@ const activitiesSchema = mongoose.Schema({
         lng: {type: String}
       }
     },
-    date: { type: String },
-    time: { type: String }
+    date: {type: String},
+    time: {type: String}
 });
 
 const Activity = mongoose.model('activities', activitiesSchema);
